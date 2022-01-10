@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskFormComponent implements OnInit {
 
+  tasktext!: string;
+  date! : Date ;
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    if(!this.tasktext){
+      alert("Please input a task to add it your task list.")
+      return
+    }
   }
 
 }

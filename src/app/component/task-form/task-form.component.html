@@ -1,17 +1,12 @@
-<form  ngSubmit="onSubmit()">
+<form  (ngSubmit)="onSubmit()">
    <div class="form-group">
-     <label for="task"></label>
-     <input type="text" name = "tasktext"  id = "tasktext" class="form-control" placeholder = "Enter your task here" >
+     <label  for="task"></label>
+     <input [(ngModel)] = "tasktext" type="text" name = "tasktext"  id = "tasktext" class="form-control" placeholder = "Enter your task here" >
    </div>
 
    <div class="form-group">
-     <input type="date">
+     <input  [(ngModel)] = "date" type="date">
      <label for="date" name="date" class="form-control" id="date" placeholder ="input date"></label>
-   </div>
-
-   <div class= "form-group">
-     <label for="time"></label>
-     <input type="time" name="time" id="time" placeholder="Time of the task">
    </div>
    <button class= "btn btn-danger">
      Submit
