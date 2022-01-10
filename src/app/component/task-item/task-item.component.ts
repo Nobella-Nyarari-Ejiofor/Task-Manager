@@ -15,4 +15,9 @@ tasks : Task[] = TASKS;
   ngOnInit(): void {
   }
 
+onDelete(id:number){
+ this.tasks = this.tasks.filter((task) => task.id != id);
+}
+
+
 }
