@@ -6,7 +6,7 @@ export const TASKS : Task[] =[
     id: 1,
     tasktext : "Go to the Gym",
     date: new Date(2022-1-19),
-    reminder : true
+    reminder : true , 
   },
   {
     id: 2,
