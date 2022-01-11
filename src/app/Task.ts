@@ -3,5 +3,5 @@ export interface Task{
   tasktext : string ;
   date: Date; 
   reminder: boolean;
-
+  status : boolean
 }

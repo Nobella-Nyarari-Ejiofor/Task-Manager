@@ -10,6 +10,8 @@ import { TASKS } from 'src/app/mock-task';
 export class TaskItemComponent implements OnInit {
 
 tasks : Task[] = TASKS;
+
+ 
   constructor() { }
 
   ngOnInit(): void {
@@ -17,6 +19,10 @@ tasks : Task[] = TASKS;
 
 onDelete(id:number){
  this.tasks = this.tasks.filter((task) => task.id != id);
+}
+
+addTask(task:Task){
+  this.tasks.push(task)
 }
 
 

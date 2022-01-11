@@ -1,5 +1,5 @@
 
-<app-task-form></app-task-form>
+<app-task-form (onAddTask)="addTask($event)"></app-task-form>
 
 <div class="card w-50 m-auto " *ngFor ="let task of tasks">
   <div class="card-body ">
