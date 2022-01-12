@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Task } from 'src/app/Task';
 import { TASKS } from 'src/app/mock-task';
 
@@ -9,7 +9,10 @@ import { TASKS } from 'src/app/mock-task';
 })
 export class TaskItemComponent implements OnInit {
 
+// @Output() onClick : EventEmitter<Task> = new EventEmitter() ;
+
 tasks : Task[] = TASKS;
+status!: boolean ;
 
  
   constructor() { }
@@ -26,4 +29,7 @@ addTask(task:Task){
 }
 
 
+
+
 }
+

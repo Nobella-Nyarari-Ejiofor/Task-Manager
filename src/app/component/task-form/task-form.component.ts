@@ -30,7 +30,8 @@ export class TaskFormComponent implements OnInit {
       tasktext :this.tasktext ,
       date : this.date,
       id: parseInt(Math.random().toString().split(".")[1].substring(0,2)),
-      reminder : false 
+      reminder : false, 
+      status : true
      }
      console.log(newTask)
 
